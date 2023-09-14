@@ -8,6 +8,16 @@
 
 ## やり方
 1. お気に入りのtcbox（ここでは`\mybox`）を定義する。
-2. thmtools パッケージの `\declaretheoremstyle` で定理環境のスタイルを定義する。このとき、
+2. `\mybox` を使う style を thmtools パッケージの `\declaretheoremstyle` で定義するのだが、`headformat` で調整する
    ```tex
-   
+   \declaretheoremstyle[
+   ..., (その他のオプション(今回は関係ない))
+   headpunct={}
+   headformat={\mybox{\NUMBER\ \NAME\NOTE.}}
+   ]{mystyle}
+3. mystyle を style に指定した定理環境では番号、名前、注釈までが `\mybox` で囲われる
+
+## 後書き
+- 有名かもしれないけど、定理環境の外の枠を tcolorbox でいじることしかやっていなかったので、中のデザインにも tcbox が使えて驚いた
+- `headformat` の自由度が高いのでさまざまな指定ができる
+- `headpunct={}` を指定して `headformat` にピリオドを打ち込んでいるのは、こうしないとピリオドが枠の外に出てしまうため。解決法はあるかもしれないけど分からない
