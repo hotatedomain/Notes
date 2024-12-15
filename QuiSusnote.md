@@ -1,5 +1,5 @@
 # Quillen--Suslin の定理の勉強ノート
-
+Serre予想「体\(k\)上の多項式環\(R=k[x_1,\dots,x_n]\)に対し，有限生成射影的\(R\)加群は自由加群である」はSerreがFACで初めて提起し，QuillenとSuslinによって独立に解かれた．このノートは主にQuillenの証明をフォローしつつ可能な限りself-containedかつモダンな形で整理することを目標に勉強する過程を記録する．
 
 
 # 文献
