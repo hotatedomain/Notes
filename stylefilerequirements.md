@@ -16,9 +16,14 @@
   - 省略形: defi
 - example: 例
   - 省略形: exam
+- remark: 注意
+  - 省略形: rmk
 - fact: 事実（Fact）
   - 省略形: fact
 - observation: 観察・実験（Observation）
   - 省略形: obse
 
 ## 証明環境
+通常の証明環境と、examやrmkに書いた内容を説明する省略的な証明環境の2種類あることが望ましい。
+
+## 図表について
