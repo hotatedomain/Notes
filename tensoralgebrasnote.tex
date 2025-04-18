@@ -4,6 +4,14 @@
 \(A\)-加群\(M\)と非負整数\(k\)に対し，\(T_A^k(M)\coloneqq M^{\otimes k}=M\otimes M\otimes\dots\otimes M\)とおき，\(M\)の\(k\)次テンソル冪という．
 ただし，\(T_A^0(M)=A\)とする．
 
-次に，これらテンソル冪の直和\(T(M)\coloneqq \bigoplus_{k\leq0}T^k(M)=A\oplus M\oplus M^{\otimes2}\oplus\dots\)を\(M\)のテンソル代数という．
+次に，これらテンソル冪の直和\(T_A(M)\coloneqq \bigoplus_{k\leq0}T^k(M)=A\oplus M\oplus M^{\otimes2}\oplus\dots\)を\(M\)のテンソル代数という．
 \end{defi}
-係数環\(A\)が明らかなときは\(T^p(M)\)や\(T(M)\)と書き表す．非負整数\(p\), \(q\)に対し，テンソル積の誘導する同形\(T^p(M)\otimes T^q(M)\to T^{p+q}(M)\)
+係数環\(A\)が明らかなときは\(T^p(M)\)や\(T(M)\)と書き表す．非負整数\(p\), \(q\)に対し，テンソル積の誘導する同形\(T^p(M)\otimes T^q(M)\to T^{p+q}(M)\)によって積が定まる．すなわち，
+\[(x_1\otimes\dots\otimes x_p)\cdot(y_1\otimes\dots\otimes y_q)=x_1\otimes\dots\otimes x_p\otimes y_1\otimes\dots\otimes y_q\]
+を線形に拡張して定める．\(T_A(M)\)には次数付き\(A\)-代数の構造が入る．
+
+\begin{defi}[外積代数]
+\(M\)の外積代数\(\exterialg(M)\)を，対称代数\T(M)\)の\(x\otimes x\in T^2(M)\)が生成するイデアルによる商として定める．
+
+\(x_1\otimes\dots\otimes x_k\in T^k(M)\)の像を\(x_1\wedge\dots\wedge x_k\in \wedge^kM\)と書く．
+\end{defi}
