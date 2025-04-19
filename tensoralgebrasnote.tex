@@ -1,3 +1,38 @@
+\DeclareMathOperator{\Der}{Der}
+\newcommand{compo}{\circ}
+\newcommand{\diffmod}{\Omega}
+\section{微分加群}
+\begin{defi}[導分]
+\(A\)を環，\(B\)を\(A\)-代数，\(M\)を\(B\)-加群とする．\(A\)-加群の射\(D\in\Hom_A(B,M)\)であって
+\[D(bb')=bD(b')+b'D(b)\]
+を満たすものを，\(B\)から\(M\)への\(A\)上の導分（\(A\)-derivation）という．
+\end{defi}
+\(B\)から\(M\)への\(A\)上の導分全体の集合を\(\Der_A(B,M)\)と書く．これには\(B\)-加群の構造が自然に入る．\(A=\Z\)のとき，単に\(\Der(B,M)\)と書く．\(M=B\)のとき，単に\(\Der_A(B)\)と書く．
+\begim{lem}
+任意の\(D\in\Der_A(B,M)\)に対し\(D(1)=0\)であるから，特に\(D(A)=0\)である．従って\(A\)-代数の構造射が全射なら\(\Der_A(B,M)=0\)である．
+\end{lem}
+環\(C=B\otimes_AB\)には\(b(b_1\otimes b_2)=(bb_1)\otimes b_2\)により\(B\)-代数の構造が入ることに注意する．\(A\)-代数の射\(\mu\colon C\to B;\ b\otimes b' \mapsto bb'\)に対し，\(I_{B/A}=\Ker(\mu)\)とおく．\(I_{B/A}\)は\(a\otimes b-b\otimes1\)という形の元で生成される．\(B\otimes_AB\\)は\(B\)-代数とみなすことができ，この構造射によって\(I_{B/A}\)は\(B\)-加群とみなせる．
+\begin{defi}[微分加群]
+剰余\(B\)-加群\(I_{B/A}/I_{B/A}^2\)を\(\Omega_{B/A}^1\)と書き，\(B\)の\(A\)上の微分加群（differential module）という．また，\(d=d_{B/A}\in\Hom(B,\Omega_{B/A}^1)\)を
+\[db=1\otimes b-b\otimes1\mod I_{B/A}^2\]
+で定める．
+\end{defi}
+\(d_{B/A}\)は実は\(A\)-加群の射になる．実際，\(a\in A\), \(b\in B\)に対して
+\[d(ab)=1\otimes(ab)-(ab)\otimes1=(1\otimes a)(1\otimes b-b\otimes1)=(1\otimes a)db\]
+である．\(\Omega_{B/A}^1\)は\(B\)-加群としては\(\Sets{db | b\in B}\)によって生成される．
+
+微分加群は導分の表現対象として特徴づけられる．\(B\)-加群の圏\(\Mod{B}\)に対し，対応
+\[\Der_A(B,-)\colon M\mapsto\Der_A(B,M)\]
+は\(\Mod{B}\)から\(\Mod{B}\)への共変関手になっている．この関手が微分加群で表現されることを示そう．
+\begin{theo}
+任意の\(B\)加群\(M\)と\(A\)上の導分\(D\in \Der_A(B,M)\)に対して，\(D=f\compo d_{B/A}\)を満たす\(B\)加群の射\(f\colon \Omega_{B/A}^1\to M\)が一意的に存在する．特に，関手的な\(B\)-加群の同形
+\[\Hom_B(\Omega_{B/A}^1,M)\cong\Der_A(B,M\)\]
+が存在する．
+\end{theo}
+\begin{proof}
+
+\end{proof}
+
 \section{テンソル代数}
 この節では\(A\)は可換環とする．
 \begin{defi}
